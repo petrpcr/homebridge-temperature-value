@@ -37,7 +37,15 @@ class TemperatureValue{
         return services;
 
     }
-    getTemperatureState(){
-        return 15
+    getTemperatureState(callback){
+        var temperature = 10
+        try{
+            
+            this.temperatureService.setCharacteristic(Characteristic.CurrentTemperature,temperature)
+            callback(null,temperature);
+        }catch(error){
+            callback(error)
+        }
+
     }
 }

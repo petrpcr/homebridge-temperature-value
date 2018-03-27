@@ -9,6 +9,9 @@ module.exports = function (homebridge) {
 class TemperatureValue{
     constructor(log,config){
         this.FileName = config["FileName"]
+        this.manufacturer = config.manufacturer || "medvedi.eu"
+        this.model = config.model || "RF433Mhz"
+        this.serial = config.serial || "1234"
     }
 
     getServices() {

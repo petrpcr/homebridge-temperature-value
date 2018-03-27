@@ -8,7 +8,8 @@ module.exports = function (homebridge) {
 
 class TemperatureValue{
     constructor(log,config){
-        this.FileName = config["FileName"]
+        this.name = config.name;
+        this.inputfilename = config.inputfilename;
         this.manufacturer = config.manufacturer || "medvedi.eu"
         this.model = config.model || "RF433Mhz"
         this.serial = config.serial || "1234"
@@ -35,5 +36,8 @@ class TemperatureValue{
 
         return services;
 
+    }
+    getTemperatureState(){
+        return 15
     }
 }

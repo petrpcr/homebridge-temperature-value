@@ -1,0 +1,23 @@
+{
+  "name": "homebridge-temperature-value",
+  "version": "1.0.0",
+  "description": "homebridge teperature value visualization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrpcr/homebridge-temperature-value.git"
+  },
+  "keywords": [
+    "homebridge",
+    "pugin"
+  ],
+  "author": "Petr Pokorný",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petrpcr/homebridge-temperature-value/issues"
+  },
+  "homepage": "https://github.com/petrpcr/homebridge-temperature-value#readme"
+}

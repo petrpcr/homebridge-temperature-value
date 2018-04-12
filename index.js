@@ -40,10 +40,11 @@ class TemperatureValue{
     getTemperatureState(callback){
         var temperature = 10
         try{
-            
+
             this.temperatureService.setCharacteristic(Characteristic.CurrentTemperature,temperature)
             callback(null,temperature);
-        }catch(error){
+        }
+        catch(error){
             callback(error)
         }
 
